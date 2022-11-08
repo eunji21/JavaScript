@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>판매량 구하기</title>
+    <script>
+
+        var sales1 = prompt("1분기 판매량을 입력하세요.");
+        var sales2 = prompt("2분기 판매량을 입력하세요.");
+        var sales3 = prompt("3분기 판매량을 입력하세요.");
+
+        var total = sales1 + sales2 + sales3;
+        var average = (sales1 + sales2 + sales3)/3;
+
+        var result = total>=average && total>=average;
+        var result = result ? "판매량이 평균 이상입니다." : "판매량이 평균 이하입니다.";
+        document.write(result);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
