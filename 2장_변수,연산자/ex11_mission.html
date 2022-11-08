@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>적중 체중을 구하는 테스트기 만들기</title>
+    <!-- <script> //내가 작성한 답
+        var userHeight;
+        var userWeight;
+        var average;
+        var result;
+
+        userHeight = 180;
+        userWeight = 74;
+        average = (userHeight-100)*0.9;
+        result = userWeight-average;
+
+        document.write("신장:", userHeight,"cm", "<br>");
+        document.write("체중:", userWeight,"kg", "<br>");
+        document.write("적정 체중:", average, "kg","<br>");
+        document.write("적정 체중은 ",average,"kg이며, ","적정 체중에서 ", result,"kg 초과한 것을 알 수 있습니다.")
+    </script> -->
+
+
+    <script> //질의응답 창으로 만들기
+        var name = prompt("당신의 이름은?", "");
+        var height = prompt("당신의 키는?", "0");
+        var weight = prompt("당신의 몸무게는?", "0");
+
+        var average = (height - 100) * 0.9;
+	    var result = weight >= average - 5 && weight <= average + 5;
+	    result = result ? "적정 체중입니다." : "적정 체중이 아닙니다.";
+	    document.write(name +"님은 "+ result);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
