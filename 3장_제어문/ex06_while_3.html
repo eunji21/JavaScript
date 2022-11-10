@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>while 반복문</title>
+    <!--20부터 10까지의 숫자 중 짝수일 경우에는 
+    파란색으로 출력되고, 홀수일 경우에는 빨간색으로 출력 -->
+    
+    <style>
+        *{margin: 0;}
+        p{padding-bottom: 10px;}
+        .blue{color: blue;}
+        .red{color: red;}
+    </style>
+
+    <script>
+        var i = 20;
+        while(i >= 10){
+            if(i%2 === 0){
+                document.write("<p class='blue'>"+i+"</p>");
+            }else{
+                document.write("<p class='red'>"+i+"</p>");
+            }
+            i--;
+        }
+    </script>
+</head>
+<body>
+
+        <!-- <script> //내가 한 풀이 실패~!
+        var i = 1;
+        while(10=< i >=20){
+            if(i%2 === 0){
+                document.write("<p class 'blue'>"+i+"</p>");
+            }else{
+                document.write("<p class 'red'>"+i+"</p>");
+            }
+            i--;
+        }
+        </script> -->
+</body>
+</html>
