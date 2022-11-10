@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for문</title>
+    <!--
+        1부터 100까지 5배수일 경우에는 빨간색 글자,
+        7배수일 경우에는 초록색 글자, 5배수이며 7배수일 경우 파란색
+    -->
+
+    <style>
+        *{margin: 0; padding: 10%;}
+        .red{color: red; padding-bottom: 10px;}
+        .green{color: green; padding-bottom: 10px;}
+        .blue{color: blue; padding-bottom: 10px;}
+    </style>
+
+    <script>
+        for(var i =1; i<=100;i++){
+            if(i%5 == 0 && i%7 != 0){ //5배수이고 7배수가 아닐 때
+                document.write("<p class= 'red'>"+i+"</p>");
+
+            }else if(i%5 != 0 && i%7 == 0){ //7배수이고 5배수가 아닐 때
+                document.write("<p class= 'green'>"+i+"</p>");
+
+            }else if(i%5 == 0 && i%7 == 0){ //5배수, 7배수에 해당되는 경우
+                document.write("<p class= 'blue'>"+i+"</p>");
+            }
+            i++;
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
