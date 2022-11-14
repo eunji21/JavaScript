@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배열 객체의 메서드 및 속성</title>
+</head>
+<body>
+    <script>
+        var arr_1 = ["저녁","먹고","싶당","배고파"];
+        var arr_2 = ["오늘","저녁은","오므라이스"];
+
+
+        var result = arr_2.join("-");
+        console.log(result);
+        
+        result = arr_1.concat(arr_2);
+        console.log(result);
+
+        result = arr_1.slice(1,3);
+        console.log(result);
+
+        arr_1.sort();
+        console.log(arr_1);
+
+        arr_2.reverse();
+        console.log(arr_2);
+
+
+    </script>
+</body>
+</html>
