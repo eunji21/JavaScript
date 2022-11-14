@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배열 객체</title>
+</head>
+<body>
+    <script>
+        var arr = [30, "따르릉",true];
+
+        document.write("<h3>배열값 가져오기-1</h3>");
+        document.write(arr[0],"<br>");
+        document.write(arr[1],"<br>");
+        document.write(arr[2],"<br>");
+
+
+        //i는 0부터 2까지 반복. arr의 인덱스값 0,1,2를 화면에 출력
+        //length는 배열에 저장된 총 데이터의 개수를 반환한다.
+        document.write("<h3>배열값 가져오기-2</h3>");
+        for(var i=0; i<arr.length; i++){ //배열에 3개의 데이터가 저장되었다.
+            document.write(arr[i],"<br>");
+        }
+
+        document.write("<h3>배열값 가져오기-3</h3>");
+        for(i in arr){
+            document.write(arr[i],"<br>");
+        }
+
+
+    </script>
+</body>
+</html>
