@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문자열 객체</title>
+</head>
+<body>
+    <script>
+        var t = "Hello Thank you good luck to you";
+        document.write(t.charAt(16),"<br/>"); //"g"
+        document.write(t.indexOf("you"),"<br/>"); //12
+        document.write(t.indexOf("you",16),"<br/>"); //29
+        document.write(t.lastIndexOf("you"),"<br/>"); //29
+        document.write(t.lastIndexOf("you",25),"<br/>"); //12
+        document.write(t.match("luck"),"<br/>"); //luck
+        document.write(t.search("you"),"<br/>"); //12
+        document.write(t.substr(21,4),"<br/>"); //luck
+        document.write(t.substring(6,12),"<br/>"); //Thank
+        document.write(t.replace("you","me"),"<br/>"); //Hello Thank me good luck to you
+        document.write(t.toLowerCase(),"<br/>"); //소문자 문자열
+        document.write(t.toUpperCase(),"<br/>"); //대문자 문자열
+        document.write(t.length,"<br/>"); //공백도 문자로 취급. 32
+
+
+
+        var s = t.split(" ");
+        document.write(s[0],"<br>"); //H
+        document.write(s[4],"<br>"); //o
+
+
+        var str="A";
+        var t = str.charCodeAt(0);
+        document.write(t,"<br>"); //65
+        document.write(String.fromCharCode(65),"<br>"); //A
+
+    </script>
+</body>
+</html>
